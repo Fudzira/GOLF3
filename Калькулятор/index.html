@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="text"], select, .result {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Калькулятор</h1>
+
+    <form action="calculytor.php" method="post">
+        <input type="text" name="num1" placeholder="Введите число 1" required><br>
+        <input type="text" name="num2" placeholder="Введите число 2" required><br>
+        <select name="operation">
+            <option value="add">Сложение</option>
+            <option value="subtract">Вычитание</option>
+            <option value="multiply">Умножение</option>
+            <option value="divide">Деление</option>
+            <option value="percentage">Процент от числа</option>
+        </select><br>
+        <input type="submit" name="calculate" value="Вычислить">
+    </form>
+
+</div>
+
+</body>
+</html>
